@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+	<title>Invie - tus mejores guitarras </title>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="styleinvie.css">
+</head>
+<body>
+	<section id="portada" class="portada background"> <!-- portada -->
+	<header id="header" class="header contenedor"> <!-- header -->
+		<figure class="logotipo"> <!-- logotipo -->
+			<img src="assets/invie.png" width="186" height="60" alt="Invie logotipo">
+		</figure>
+		<nav class="menu"> <!-- menu -->
+			<ul>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="#guitarras">Guitarras</a>
+				</li>
+				<li>
+					<a href="Precios.html">Precios</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="contenedor">
+	<h1 class="titulo">Guitarras <span>Invi</span>esibles</h1><!-- titulo -->
+	<h3 class="titulo-a">Se la estrella de rock que siempre quisiste ser</h3><!-- resumen -->
+	<a class="button" href="#guitarras">Conoce mas</a><!-- boton -->
+	</div>
+	</section>
+	<section id="guitarras" class="guitarras contenedor"> <!-- guitarras -->
+	<h2 class="titulo">Nuestras guitarras</h2><!-- titulo -->
+	<article class="guitarra">
+		<img class="derecha" src="assets/invie-acustica.png" width="350" alt="Guitarra Invie Acustica">
+		<div class="contenedor-guitarra-a">
+			<h3 class="titulo-b">Invie Acustica</h3>
+			<ol>
+				<li>Estilo Vintage</li>
+				<li>Madera pura</li>
+				<li>Incluye estuche invisible de aluminio</li>
+			</ol>
+		</div>
+		
+	</article>
+		<article class="guitarra b"> 
+			<img class="izquierda"  src="assets/invie-classic.png" width="350" alt="Guitarra Invie Classic">
+			<div class="contenedor-guitarra-b">
+				<h3 class="titulo-b">Invie Classic</h3>
+				<ol>
+					<li>Estilo Vintage</li>
+					<li>Liviana</li>
+					<li>Inicia tu camino como rockstar</li>
+				</ol>
+			</div>
+		</article>
+	</section>
+	<footer class="footer">
+		<div class="contenedor">
+			<div class="contacto">
+				<img src="assets/invie-white.png" alt="logotipo blanco">
+				<a href="tel:+573024456678"><strong>Telefono</strong><span>3024456678</span></a>
+				<a href="mailto:contacto@invie.com"><strong>E-mail</strong><span>contacto@invie.com</span></a>
+			</div>
+			<form class="formulario">
+			<div class="col1">
+				<label for="nombre">Nombre</label>
+				<input type="text" required id="nombre" name="nombre"/>
+				<label for="email">E-mail</label>
+				<input type="email" required id="email" name="nombre"/>		
+				<div class="sexo">
+					<label for="mujer">
+						<input type="radio" checked id="mujer" name="Sexo" value="mujer"> mujer	
+					</label>
+					<label for="hombre">
+						<input type="radio" id="hombre" name="Sexo" value="hombre">hombre	
+					</label>
+				</div>	
+				<div class="intereses">
+					<label for="cotizacion">
+						<input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"> cotizacion 
+					</label>
+					<label for="reclamos">
+						<input type="checkbox" id="reclamos" name="intereses" value="reclamos"> reclamos 
+					</label>
+					<label for="comentarios">
+						<input type="checkbox" id="comentarios" name="intereses" value="comentarios"> comentarios 
+					</label>
+					<label for="cotizacion">
+						<input type="checkbox" id="otros" name="intereses" value="otros"> Otros
+					</label>				
+				</div>
+			</div>
+				<div class="col2">
+					<label for="comentarios">Comentarios</label>
+					<textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea>
+					<input class="button" type="submit" value="Enviar"/>
+				</div>	
+			</form>
+		</div>
+	</footer>
+</body>
+</html>
+
+<!-- 
+
+
+- El input de tipo radio se utiliza cuando no es opcion multiple o tiene un valor booleano. 
+
+- El input de tipo chekbox es para entradas multiples formularios de varas opciones.
+
+- El atributo "for" me enlaza el "iput"ccon el mismo valor, esto hace que al presionar la etiqueta label se avtive el input de que enlace. 
+
+- Label es una etiqueta que se utiliza para acompañar la caja de input y ayudar al usuario a que identifique para que debe ingresar.
+
+- El atributo "required" hace que el navegador compruebe si dentro de la caja hay contenido para "type" email es diferente ya que tambien identifique si el contenido que hay dentro es de email.
+
+- El atributo "value" le da un valor a la caja vacia y el de placeholder tambien pero es un valor de texto apagado no editable.  -->
